@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    container_name: meuMySQL
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+      - 33060:33060
+    environment:
+      - MYSQL_ROOT_PASSWORD=Trybe2022!"
+      - MYSQL_USER=Tryber
+      - MYSQL_PASSWORD=tryber19
+    restart: always
+    volumes:
+      - /home/thiago/Trybe/trybe-exercicios/back-end/bloco-20/dia-1/data:meuVolume:/var/lib/mysql
