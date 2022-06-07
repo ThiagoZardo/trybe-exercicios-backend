@@ -1,3 +1,5 @@
+const readline = require('readline-sync');
+
 const imc = (peso, altura) => {
   const formula = peso / (altura * altura);
   if(formula < 18.5) {
@@ -18,7 +20,12 @@ const imc = (peso, altura) => {
   if (formula > 40) {
     return console.log(`${formula.toFixed(2)} Obesidade graus III e IV`);
   }
-  
 }
 
-module.exports = imc;
+const calcImc = () => {
+  const peso = readline.questionInt('Qual seu peso? ');
+  const altura = readline.questionFloat('Qual sua altura? ');
+  imc(peso, altura);
+}
+
+module.exports = calcImc;

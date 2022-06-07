@@ -9,10 +9,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
     "sorteio": "node sorteio.js",
     "speed": "node speed.js",
-    "imc": "node imc.js"
+    "imc": "node imc.js",
+    "start": "node index.js" 
   },
   "keywords": [],
   "author": "Thiago Zardo",
