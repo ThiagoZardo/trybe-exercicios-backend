@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS crud_user;
+
+USE crud_user;
+
+CREATE TABLE users
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	first_name VARCHAR(30) NOT NULL,
+	last_name VARCHAR(30),
+	email VARCHAR(30) NOT NULL,
+	password VARCHAR(30),
+	PRIMARY KEY(id)
+);
+
+SELECT * FROM users;
