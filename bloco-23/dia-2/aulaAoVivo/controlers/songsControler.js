@@ -1,5 +1,6 @@
 // A CAMADA DE CONTROLER DEVE SER RESPONSÁVEL POR RECEBER A REQUISIÇÃO E RETORNAR A RESPOSTA PARA O CLIENTE
 const songsService = require('../services/songsService');
+
 const listSongs = async (req, res, _next) => {
   const musics = await songsService.getAll();
   return res.status(200).json(musics);

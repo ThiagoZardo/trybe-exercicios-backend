@@ -1,5 +1,6 @@
 // A CAMADA DE MODEL DEVE SER RESPONSAVÉL POR SE CONECTAR AO BANCO DE DADOS E FAZER ALTERAÇÕES
 const connection = require('./connection');
+
 const getAllSongs = async () => {
   const [musics] = await connection
     .execute('SELECT * FROM musics.songs');
