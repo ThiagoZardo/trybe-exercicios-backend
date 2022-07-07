@@ -1,5 +1,6 @@
 // A CAMADA DE SERVIÇOS DEVE SER REPONSAVEL POR FAZER VALIDAÇÕES DE REGRAS DE NEGÓCIO
 const songsModel = require('../models/songsModel');
+
 const getAll = async () => {
   const musics = await songsModel.getAllSongs();
   return musics;
