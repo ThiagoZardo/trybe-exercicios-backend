@@ -9,9 +9,6 @@ const MoviesModel = require('../../models/movieModel');
   um objeto simulando os métodos que iremos desenvolver,
   porém, eles não terão nenhum comportamento
 */
-const MoviesModel = {
-  create: () => {}
-};
 
 describe('Insere um novo filme no BD', () => {
   const payloadMovie = {
