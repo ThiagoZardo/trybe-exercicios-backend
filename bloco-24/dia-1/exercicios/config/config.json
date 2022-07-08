@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "admin",
+    "database": "meu_banco",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "admin",
+    "password": null,
+    "database": "meu_banco",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "admin",
+    "password": null,
+    "database": "meu_banco",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
