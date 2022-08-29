@@ -1,15 +1,37 @@
-import Cliente from './classes/Cliente';
-import Pedidos from './classes/Pedidos';
-import Item from './classes/Item';
+import { runInThisContext } from "vm";
 
-const client = new Cliente('Thiago');
+export default class Data {
+  dia: number;
+  mes: number;
+  ano: number;
 
-const sandwich = new Item('Sanduíche Natural', 5.00);
-const juice = new Item('Suco de Abacaxi', 5.00);
-const dessert = new Item('Gelatina de Uva', 2.50);
+  constructor(d: number, m: number, a: number) {
+    this.dia = d;
+    this.mes = m;
+    this.ano = a;
+  }
 
-const order = new Pedidos(client, [sandwich, juice, dessert], 'dinheiro', 0.10);
+  get GetDia(): number {
+    return this.dia;
+  }
 
-// console.log('Order: ', order);
-console.log('VALOR TOTAL', order.valorTotalPedido())
-console.log('VALOR COM DESCONTO', order.valorComDescontoAplicado());
+  set SetDia(dParam: number) {
+    this.dia = dParam;
+  }
+
+  get GetMes(): number {
+    return this.mes;
+  }
+
+  set SetMes(mParam: number) {
+    this.mes = mParam;
+  }
+
+  get GetAno(): number {
+    return this.ano;
+  }
+
+  set SetAno(aParam: number) {
+    this.ano = aParam;
+  }
+}
