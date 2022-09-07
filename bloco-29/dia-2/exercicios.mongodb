@@ -1,2 +1,0 @@
-use("superheroesmongo")
-db.superheroes.find();
