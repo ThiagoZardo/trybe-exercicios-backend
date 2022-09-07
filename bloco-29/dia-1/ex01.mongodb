@@ -17,4 +17,4 @@ db.bios.find().limit(3).pretty();
 db.bios.find().limit(2).skip(5);
 
 // 🚀 Exercício 7: Retorne a quantidade de documentos da coleção books.
-db.bios.countDocuments({})
+db.books.countDocuments({})
